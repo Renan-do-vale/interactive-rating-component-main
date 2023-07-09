@@ -40,8 +40,8 @@ body p{
     color: var(--Medium-Grey);
 }
 
-
 .primary{
+    display: block;
     border-radius: 20px;
     background-color: var(--Dark-Blue);
     max-width: 400px;
@@ -119,5 +119,40 @@ button:hover{
 
 
 .secundary {
+    border-radius: 20px;
+    background-color: var(--Dark-Blue);
+    max-width: 400px;
+    padding: 2rem;
+    margin: 1rem;
+    display: none;
+    flex-direction: column;
+}
+
+.secundary > p:nth-child(2){
+    text-align: center;
+    align-self: center;
+    color: var(--orange);
+    background-color: rgba(101, 98, 117, 0.288);
+    padding: 0.3rem;
+    width: 60%;
+    border-radius: 20px;
+    margin: 2rem 0rem;
+}
+
+.secundary > h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.secundary > p:nth-child(3){
+    text-align: center;
+}
+
+.secundary img {
+    align-self: center;
+    max-width: 40%;
+}
+
+.sumir {
     display: none;
 }
