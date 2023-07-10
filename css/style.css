@@ -75,6 +75,11 @@ body p{
     border-radius: 50%;
 }
 
+.check-number > .ativo {
+    background-color: var(--orange);
+    color: white;
+}
+
 .check-number > span:hover {
     cursor: pointer;
     background-color: var(--Light-Grey);
