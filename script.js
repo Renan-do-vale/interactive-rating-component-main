@@ -2,7 +2,6 @@ let rate = null
 
 
 function mark(event) {
-    const ativo = document.querySelector(".ativo")
     const numbers = document.querySelectorAll(".check-number span")
     numbers.forEach((e) => {
         e.classList.remove("ativo")
@@ -23,6 +22,5 @@ function submitCheck() {
         secundary.style.display = 'flex'
     }
     chosen.innerText = rate
-    console.log(rate)
 
 }
