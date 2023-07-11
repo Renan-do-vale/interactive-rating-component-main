@@ -76,13 +76,13 @@ body p{
 }
 
 .check-number > .ativo {
-    background-color: var(--orange);
+    background-color: var(--Light-Grey);
     color: white;
 }
 
 .check-number > span:hover {
     cursor: pointer;
-    background-color: var(--Light-Grey);
+    background-color: var(--orange);
     color: white;
 }
 
@@ -160,4 +160,36 @@ button:hover{
 
 .sumir {
     display: none;
+}
+
+.attribution {
+    font-size: 15px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    color: var(--orange);
+    text-decoration: none; 
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 450px) {
+    .primary{
+        max-width: 350px;
+    }
+
+    .check-number{
+        gap: 10px;
+    }
+
+    .secundary {
+        max-width: 350px;
+    }
+
+    .attribution{
+        font-size: 10px;
+    }
 }

@@ -1,25 +1,20 @@
-const secundary = document.querySelector(".secundary")
-
-const numbers = document.querySelectorAll(".check-number span")
-
 let rate = null
 
 
 function mark(event) {
     const ativo = document.querySelector(".ativo")
-    if(ativo){
-        event.classList.remove("ativo")
-        rate = null
-    }else {
-        event.classList.add("ativo")   
-        rate = event.innerText
-    }
+    const numbers = document.querySelectorAll(".check-number span")
+    numbers.forEach((e) => {
+        e.classList.remove("ativo")
+    })
+    event.classList.add("ativo")   
+    rate = event.innerText
 }
 
 
 
 
-function minhaFuncao() {
+function submitCheck() {
     const primary = document.querySelector('.primary')
     const secundary = document.querySelector(".secundary")
     const chosen = document.querySelector(".chosen")
